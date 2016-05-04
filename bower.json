@@ -1,0 +1,21 @@
+{
+  "name": "asciiPaint",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "animate.css": "^3.5.1",
+    "bootstrap": "^3.3.6"
+  }
+}

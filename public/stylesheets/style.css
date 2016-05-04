@@ -1,0 +1,107 @@
+body {
+  padding: 5px 30px;
+  font: 14px "Courier New", Courier, monospace;
+}
+
+:focus{
+  outline: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #1c1d1d;
+  text-decoration: none;
+}
+
+#myCanvas{
+
+}
+
+#allOfIt{
+  border: 1px solid #414141;
+  color: transparent;
+  text-shadow: 0 0 0 white;
+  cursor: none;
+  font-size: 200%;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+#myPaints h4, #myPaints h5{
+  border-bottom: 1px solid #414141;
+}
+
+#toggleIt{
+  margin:5px 0px;
+  width: 100%;
+}
+
+#fileName{
+  display: inline-block;
+  padding: 5px;
+  min-width: 220px;
+}
+
+#saveBtn{
+  border-left: 1px solid #414141;
+  margin: 0px;
+  padding: 5px;
+}
+
+#saveArt{
+  border: 1px solid #414141;
+  margin: 0px;
+  padding: 0px;
+}
+
+#feedBack{
+  margin-top: 5px;
+}
+
+#fileLink{
+  background-color: #5fcefe;
+  border: 1px solid #414141;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+.gridBlock {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ebeced;
+  border-left: 1px solid #6e6d6d;
+  border-bottom: 1px solid #6e6d6d;
+  border-top: 1px solid #6e6d6d;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.gridBlock:last-child {
+  border-right: 1px solid #6e6d6d;
+}
+
+.hovered{
+  background-color: #bada55;
+  cursor: crosshair;
+}
+
+.warning{
+  background-color: #f55d5d;
+}
+
+.paints {
+  background-color: #555;
+}
+
+.saveIt{
+  background-color: #5fcefe;
+}

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  #container-fluid
+   .row
+    - var row = 40;
+    - var col = 80;
+    - var i = 1;
+    div.col-md-8
+      h1 #{title}
+      #myCanvas
+        while i < row
+         div(id= 'row' + i++).gridRow
+          - var j = 1;
+          while j < col
+           - var k = i -1;
+           span(class='gridBlock pixelz col' + j++ + ' row' + k contentEditable ='true' id = 'row' + k + 'col' + j) &nbsp
+    div#myPaints.col-md-4
+      h4 Paintr Ctrls
+      h5 Current Paint Brush 
+      small //Any key to change brush || Spacebar for eraser\\
+      #allOfIt(contentEditable='true' class='paints')
+      div#toggleIt
+        span#hoverToPaint || N ||
+        //input(type="checkbox" name='hoverToPaint' id='hoverToPaint') 
+        span Paint on Hover
+        //span#returnFocus || N ||
+        //input(type="checkbox" name='returnFocus' id='returnFocus') 
+        //span Toggle to Y to update filename and save
+      div#saveArt
+        span#fileName(contentEditable='true') myArtFile.txt
+        span#saveBtn Save Art to File
+      div#feedBack
+      div#fileLink
